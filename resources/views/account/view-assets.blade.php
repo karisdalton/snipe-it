@@ -379,6 +379,7 @@
             <!-- checked out assets table -->
 
             <table
+                  data-cookie-id-table="userAssignedAssets"
                   data-toolbar="#userAssetToolbar"
                   data-pagination="true"
                   data-id-table="userAssets"
@@ -702,9 +703,6 @@
                 </tbody>
               </table>
           </div><!-- /consumables-tab -->
-          <div class="tab-pane" id="test">
-            <p>fdlkgjljg</p>
-          </div>
 
         </div><!-- /.tab-content -->
       </div><!-- nav-tabs-custom -->

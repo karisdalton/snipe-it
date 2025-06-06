@@ -390,6 +390,8 @@ return [
     'new_license'           => 'Lisensi Baru',
     'new_accessory'         => 'Aksesori Baru',
     'new_consumable'        => 'Barang Habis Pakai Baru',
+    'new_component'         => 'New Component',
+    'new_user'              => 'New User',
     'collapse'              => 'Ciutkan',
     'assigned'              => 'Diberikan',
     'asset_count'           => 'Total Aset',
@@ -520,7 +522,7 @@ return [
     'checked_out_to_fields' => 'Kolom Informasi Peminjam',
     'percent_complete' => '% lengkap',
     'uploading' => 'Sedang mengunggah... ',
-    'upload_error' => 'Terjadi kesalahan saat mengunggah berkas. Pastikan tidak ada baris yang kosong dan nama kolom tidak ada yang ganda.',
+    'upload_error' => 'Error uploading file. Please check that you have no empty rows or duplicated column names in your CSV, and that the server permissions allow uploads.',
     'copy_to_clipboard' => 'Salin ke Papan Klip',
     'copied' => 'Disalin!',
     'status_compatibility' => 'Jika aset telah dialokasikan, statusnya tidak dapat diubah menjadi tidak dapat digunakan, dan perubahan ini akan diabaikan.',
@@ -614,5 +616,14 @@ return [
     'deleted_users' => 'Deleted Users',
     'cost_each' => ':amount each',
     'remove_current_image' => 'Remove current :type image',
+
+    'seeding' => [
+        'manufacturers' => [
+            'button' => 'Create Manufacturers',
+            'prompt' => 'You do not have any manufacturers yet. Would you like to seed a list of common manufacturers? (THIS WILL OVERWRITE EXISTING MANUFACTURERS, including those that have been soft-deleted.)',
+            'success' => 'Manufacturers seeded successfully',
+            'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
+        ],
+    ],
 
 ];

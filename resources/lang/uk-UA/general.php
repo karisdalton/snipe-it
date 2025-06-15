@@ -390,6 +390,8 @@ return [
     'new_license'           => 'Нова ліцензія',
     'new_accessory'         => 'Новий аксесуар',
     'new_consumable'        => 'Новий витратний матеріал',
+    'new_component'         => 'New Component',
+    'new_user'              => 'New User',
     'collapse'              => 'Згорнути',
     'assigned'              => 'Призначено',
     'asset_count'           => 'Кількість активів',
@@ -520,7 +522,7 @@ return [
     'checked_out_to_fields' => 'Визначено полями',
     'percent_complete' => '% завершити',
     'uploading' => 'Відвантаження... ',
-    'upload_error' => 'Помилка завантаження файлу. Будь ласка, перевірте, чи немає порожніх рядків і що не дубльовані назви стовпців.',
+    'upload_error' => 'Error uploading file. Please check that you have no empty rows or duplicated column names in your CSV, and that the server permissions allow uploads.',
     'copy_to_clipboard' => 'Копіювати в буфер обміну',
     'copied' => 'Скопійовано!',
     'status_compatibility' => 'Якщо активи вже призначені, вони не можуть бути змінені на тип статусу, який не розгортається, і ця зміна значення буде пропущена.',
@@ -614,5 +616,14 @@ return [
     'deleted_users' => 'Видалені користувачі',
     'cost_each' => ':amount each',
     'remove_current_image' => 'Remove current :type image',
+
+    'seeding' => [
+        'manufacturers' => [
+            'button' => 'Create Manufacturers',
+            'prompt' => 'You do not have any manufacturers yet. Would you like to seed a list of common manufacturers? (THIS WILL OVERWRITE EXISTING MANUFACTURERS, including those that have been soft-deleted.)',
+            'success' => 'Manufacturers seeded successfully',
+            'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
+        ],
+    ],
 
 ];

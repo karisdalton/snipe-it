@@ -390,6 +390,8 @@ return [
     'new_license'           => '新建许可证',
     'new_accessory'         => '新建配件',
     'new_consumable'        => '新建耗材',
+    'new_component'         => '新建组件',
+    'new_user'              => '新用户',
     'collapse'              => '收起',
     'assigned'              => '已分配',
     'asset_count'           => '资产计数',
@@ -520,7 +522,7 @@ return [
     'checked_out_to_fields' => '签出到字段',
     'percent_complete' => '% 完成',
     'uploading' => '正在上传... ',
-    'upload_error' => '上传文件时出错。请检查是否没有空行，并且没有重复的列名。',
+    'upload_error' => '文件上传失败。请检查您的 CSV 文件，确保其中没有空行或重复的列名，并确认服务器权限允许上传。',
     'copy_to_clipboard' => '复制到剪贴板',
     'copied' => '已复制！',
     'status_compatibility' => '如果资产已经分配，它们不能被更改为不可部署的状态类型，并且这个值的变化将被跳过。',
@@ -574,7 +576,7 @@ return [
     'user_managed_passwords' => '密码管理',
     'user_managed_passwords_disallow' => '禁止用户管理自己的密码',
     'user_managed_passwords_allow' => '允许用户管理自己的密码',
-    'from' => 'From',
+    'from' => '从',
     'by' => '经由',
 
 // Add form placeholders here
@@ -614,5 +616,14 @@ return [
     'deleted_users' => '已删除的用户',
     'cost_each' => '每项:amount',
     'remove_current_image' => '删除当前 :type 图像',
+
+    'seeding' => [
+        'manufacturers' => [
+            'button' => '创建制造商',
+            'prompt' => '当前制造商列表为空。是否加载常用制造商清单？（<b>此操作将覆盖所有现有制造商数据</b>，含已软删除条目。）',
+            'success' => '制造商已成功加载',
+            'error' => '制造商加载失败，当前系统中已存在一条制造商记录，执行此操作将覆盖现有数据。|制造商加载失败，当前系统中已存在:count条制造商记录，执行此操作将覆盖现有数据。',
+        ],
+    ],
 
 ];

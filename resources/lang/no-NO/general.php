@@ -390,6 +390,8 @@ return [
     'new_license'           => 'Ny lisens',
     'new_accessory'         => 'Nytt tilbehør',
     'new_consumable'        => 'Ny forbruksvare',
+    'new_component'         => 'New Component',
+    'new_user'              => 'New User',
     'collapse'              => 'Kollaps',
     'assigned'              => 'Tilordnet',
     'asset_count'           => 'Antall eiendeler',
@@ -520,7 +522,7 @@ return [
     'checked_out_to_fields' => 'Checked Out To Fields',
     'percent_complete' => '% fullført',
     'uploading' => 'Laster opp... ',
-    'upload_error' => 'Feil ved opplasting av fil. Vennligst sjekk at det ikke er noen tomme rader og at ingen kolonnenavn er duplisert.',
+    'upload_error' => 'Error uploading file. Please check that you have no empty rows or duplicated column names in your CSV, and that the server permissions allow uploads.',
     'copy_to_clipboard' => 'Kopier til utklippstavlen',
     'copied' => 'Kopiert!',
     'status_compatibility' => 'Hvis eiendelene allerede er tilordnet, kan de ikke endres til en ikke-distribuerbar statustype og denne verdien vil bli hoppet over.',
@@ -614,5 +616,14 @@ return [
     'deleted_users' => 'Deleted Users',
     'cost_each' => ':amount each',
     'remove_current_image' => 'Remove current :type image',
+
+    'seeding' => [
+        'manufacturers' => [
+            'button' => 'Create Manufacturers',
+            'prompt' => 'You do not have any manufacturers yet. Would you like to seed a list of common manufacturers? (THIS WILL OVERWRITE EXISTING MANUFACTURERS, including those that have been soft-deleted.)',
+            'success' => 'Manufacturers seeded successfully',
+            'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
+        ],
+    ],
 
 ];

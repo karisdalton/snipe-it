@@ -341,7 +341,7 @@
 
 
     function hardwareAuditFormatter(value, row) {
-        return '<a href="{{ config('app.url') }}/hardware/' + row.id + '/audit" class="btn btn-sm bg-yellow" data-tooltip="true" title="Audit this item">{{ trans('general.audit') }}</a>';
+        return '<a href="{{ config('app.url') }}/hardware/' + row.id + '/audit" class="actions btn btn-sm btn-primary" data-tooltip="true" title="{{ trans('general.audit') }}"><x-icon type="audit" /><span class="sr-only">{{ trans('general.audit') }}</span></a>&nbsp;';
     }
 
 
@@ -371,6 +371,10 @@
                 actions += '<a href="{{ config('app.url') }}/' + dest + '/' + row.id + '/clone" class="actions btn btn-sm btn-info" data-tooltip="true" title="{{ trans('general.clone_item') }}"><x-icon type="clone" /><span class="sr-only">{{ trans('general.clone_item') }}</span></a>&nbsp;';
             }
 
+            if ((row.available_actions) && (row.available_actions.audit === true)) {
+                actions += '<a href="{{ config('app.url') }}/' + dest + '/' + row.id + '/audit" class="actions btn btn-sm btn-primary" data-tooltip="true" title="{{ trans('general.audit') }}"><x-icon type="audit" /><span class="sr-only">{{ trans('general.audit') }}</span></a>&nbsp;';
+            }
+
             if ((row.available_actions) && (row.available_actions.update === true)) {
                 actions += '<a href="{{ config('app.url') }}/' + dest + '/' + row.id + '/edit" class="actions btn btn-sm btn-warning" data-tooltip="true" title="{{ trans('general.update') }}"><x-icon type="edit" /><span class="sr-only">{{ trans('general.update') }}</span></a>&nbsp;';
             } else {
@@ -382,15 +386,21 @@
             if ((row.available_actions) && (row.available_actions.delete === true)) {
 
                 // use the asset tag if no name is provided
-                var name_for_box = row.name
-                if (row.name=='') {
+
+                if (row.name) {
+                    var name_for_box = row.name
+                } else if (row.title) {
+                    var name_for_box = row.title
+                } else if (row.asset_tag) {
                     var name_for_box = row.asset_tag
                 }
+
+
                 
                 actions += '<a href="{{ config('app.url') }}/' + dest + '/' + row.id + '" '
                     + ' class="actions btn btn-danger btn-sm delete-asset" data-tooltip="true"  '
                     + ' data-toggle="modal" '
-                    + ' data-content="{{ trans('general.sure_to_delete') }} ' + name_for_box + '?" '
+                    + ' data-content="{{ trans('general.sure_to_delete') }}: ' + name_for_box + '?" '
                     + ' data-title="{{  trans('general.delete') }}" onClick="return false;">'
                     + '<x-icon type="delete" /><span class="sr-only">{{ trans('general.delete') }}</span></a>&nbsp;';
             } else {

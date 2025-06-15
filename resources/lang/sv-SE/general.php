@@ -390,6 +390,8 @@ return [
     'new_license'           => 'Ny licens',
     'new_accessory'         => 'Nytt tillbehör',
     'new_consumable'        => 'Ny förbrukningsvara',
+    'new_component'         => 'New Component',
+    'new_user'              => 'New User',
     'collapse'              => 'Dölj',
     'assigned'              => 'Tilldelad',
     'asset_count'           => 'Antal tillgångar',
@@ -520,7 +522,7 @@ return [
     'checked_out_to_fields' => 'Utcheckad till fält',
     'percent_complete' => '% slutförd',
     'uploading' => 'Laddar upp... ',
-    'upload_error' => 'Fel vid uppladdning av fil. Kontrollera att det inte finns några tomma rader och att inga kolumnnamn dupliceras.',
+    'upload_error' => 'Error uploading file. Please check that you have no empty rows or duplicated column names in your CSV, and that the server permissions allow uploads.',
     'copy_to_clipboard' => 'Kopiera till urklipp',
     'copied' => 'Kopierad!',
     'status_compatibility' => 'Om tillgångar redan tilldelats kan de inte ändras till en otillgänglig statustyp varvid denna värdeändring kommer att ignoreras.',
@@ -614,5 +616,14 @@ return [
     'deleted_users' => 'Raderade användare',
     'cost_each' => ':amount styck',
     'remove_current_image' => 'Remove current :type image',
+
+    'seeding' => [
+        'manufacturers' => [
+            'button' => 'Create Manufacturers',
+            'prompt' => 'You do not have any manufacturers yet. Would you like to seed a list of common manufacturers? (THIS WILL OVERWRITE EXISTING MANUFACTURERS, including those that have been soft-deleted.)',
+            'success' => 'Manufacturers seeded successfully',
+            'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
+        ],
+    ],
 
 ];

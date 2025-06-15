@@ -390,6 +390,8 @@ return [
     'new_license'           => 'Nová licencia',
     'new_accessory'         => 'Nové príslušenstvo',
     'new_consumable'        => 'Nový spotrebný materiál',
+    'new_component'         => 'New Component',
+    'new_user'              => 'New User',
     'collapse'              => 'Zbaliť',
     'assigned'              => 'Priradené',
     'asset_count'           => 'Počet majetkov',
@@ -520,7 +522,7 @@ return [
     'checked_out_to_fields' => 'Polia pre odovzdanie',
     'percent_complete' => '% hotovo',
     'uploading' => 'Nahrávam... ',
-    'upload_error' => 'Chyba pri nahrávaní súboru. Prosím overte že súbor neobsahuje žiadne prázdne riadky a žiadne duplicitné stĺpce.',
+    'upload_error' => 'Error uploading file. Please check that you have no empty rows or duplicated column names in your CSV, and that the server permissions allow uploads.',
     'copy_to_clipboard' => 'Kopírovať do schránky',
     'copied' => 'Skopírované!',
     'status_compatibility' => 'Keď je majetok už priradený, nemôže byť jeho stav zmenený na nepriraditeľný a hodnota tejto položky bude preskočená.',
@@ -614,5 +616,14 @@ return [
     'deleted_users' => 'Deleted Users',
     'cost_each' => ':amount each',
     'remove_current_image' => 'Remove current :type image',
+
+    'seeding' => [
+        'manufacturers' => [
+            'button' => 'Create Manufacturers',
+            'prompt' => 'You do not have any manufacturers yet. Would you like to seed a list of common manufacturers? (THIS WILL OVERWRITE EXISTING MANUFACTURERS, including those that have been soft-deleted.)',
+            'success' => 'Manufacturers seeded successfully',
+            'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
+        ],
+    ],
 
 ];

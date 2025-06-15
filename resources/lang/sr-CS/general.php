@@ -390,6 +390,8 @@ return [
     'new_license'           => 'Nova licenca',
     'new_accessory'         => 'Novi dodatak',
     'new_consumable'        => 'Nov potrošni materijal',
+    'new_component'         => 'Nova komponenta',
+    'new_user'              => 'Novi korisnik',
     'collapse'              => 'Skupi',
     'assigned'              => 'Dodeljeno',
     'asset_count'           => 'Količina imovine',
@@ -520,7 +522,7 @@ return [
     'checked_out_to_fields' => 'Zaduženo poljima',
     'percent_complete' => '% završeno',
     'uploading' => 'Slanje... ',
-    'upload_error' => 'Greška tokom slanja datoteke. Molim vas potvrdite da nema praznih redova i da nazivi kolona nisu duplirani.',
+    'upload_error' => 'Greška pri slanju datoteke. Molim vas proverite da nemate prazne redove ili duplirane nazive kolona u vašem CSV-u i da dozvole na serveru dozvoljavaju snimanje datoteka.',
     'copy_to_clipboard' => 'Kopiraj u beležnicu',
     'copied' => 'Kopirano!',
     'status_compatibility' => 'Ako je imovina već zadužena, ne može biti promenjena u nezaduživi status i promena ove vrednosti će biti preskočena.',
@@ -614,5 +616,14 @@ return [
     'deleted_users' => 'Obrisani korisnici',
     'cost_each' => ':amount svaki',
     'remove_current_image' => 'Ukloni trenutnu :type sliku',
+
+    'seeding' => [
+        'manufacturers' => [
+            'button' => 'Napravi proizvođače',
+            'prompt' => 'Još uvek nemate nijednog proizvođača. Da li bi ste želeli da popunite spisak sa uobičajenim proizvođačima? (OVO ĆE PREPISATI POSTOJEĆE PROIZVOĐAČE, uključujući one premeštene u kantu za otpatke.)',
+            'success' => 'Proizvođači su uspešno dodati',
+            'error' => 'Nije bilo moguće dodati proizvođače. Proizvođač već postoji i ovo bi ga prepisalo.|Nije bilo moguće dodati proizvođače. :count proizvođača već postoji i ovo bi ih prepisalo.',
+        ],
+    ],
 
 ];

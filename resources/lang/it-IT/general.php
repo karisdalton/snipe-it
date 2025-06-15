@@ -390,6 +390,8 @@ return [
     'new_license'           => 'Nuova Licenza',
     'new_accessory'         => 'Nuovo Accessorio',
     'new_consumable'        => 'Nuovo Consumabile',
+    'new_component'         => 'New Component',
+    'new_user'              => 'New User',
     'collapse'              => 'Riduci',
     'assigned'              => 'Assegnato',
     'asset_count'           => 'Quantità Beni',
@@ -520,7 +522,7 @@ return [
     'checked_out_to_fields' => 'Campi degli assegnati',
     'percent_complete' => '% completato',
     'uploading' => 'Caricamento... ',
-    'upload_error' => 'Errore nel caricamento del file. Controlla che non ci siano righe vuote e che nessun nome di colonna sia duplicato.',
+    'upload_error' => 'Errore nel caricamento del file. Si prega di controllare che non ci siano righe vuote o nomi di colonne duplicati nel CSV e che le autorizzazioni del server consentano i caricamenti.',
     'copy_to_clipboard' => 'Copia negli Appunti',
     'copied' => 'Copiato!',
     'status_compatibility' => 'Se i Beni sono già assegnati, il loro stato non può essere cambiato in "Non consegnabile" e la modifica di questo valore verrà ignorata.',
@@ -614,5 +616,14 @@ return [
     'deleted_users' => 'Utenti cancellati',
     'cost_each' => ':amount ciascuno',
     'remove_current_image' => 'Rimuovi l\'immagine :type',
+
+    'seeding' => [
+        'manufacturers' => [
+            'button' => 'Crea Produttori',
+            'prompt' => 'You do not have any manufacturers yet. Would you like to seed a list of common manufacturers? (THIS WILL OVERWRITE EXISTING MANUFACTURERS, including those that have been soft-deleted.)',
+            'success' => 'Manufacturers seeded successfully',
+            'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
+        ],
+    ],
 
 ];
